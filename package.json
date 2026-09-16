@@ -1,0 +1,26 @@
+{
+  "name": "empops-platform",
+  "version": "1.0.0",
+  "description": "Unified Workforce & Workplace Operations Platform (HR + Attendance + ITSM + ITAM)",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "keywords": [
+    "hrms",
+    "itsm",
+    "itam",
+    "attendance",
+    "workforce-management",
+    "asset-lifecycle"
+  ],
+  "author": "EmpOps Team",
+  "license": "UNLICENSED"
+}
